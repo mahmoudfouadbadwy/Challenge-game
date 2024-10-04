@@ -1,14 +1,14 @@
 //
-//  Challenge_gameApp.swift
-//  Challenge game
+//  Challange_GameApp.swift
+//  Challange-Game
 //
-//  Created by Mahmoud Fouad on 6/4/21.
+//  Created by Mahmoud Fouad on 04/10/2024.
 //
 
 import SwiftUI
 
 @main
-struct Challenge_gameApp: App {
+struct Challange_GameApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

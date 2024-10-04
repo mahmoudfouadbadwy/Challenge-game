@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    //MARK:-  property wrappers
+    //MARK: -  property wrappers
     @State private var moves = ["Rock", "Paper", "Scissors"].shuffled()
     @State private var moveIndex = Int.random(in: 0..<3)
     @State private var shouldWin = Bool.random()
@@ -18,7 +18,7 @@ struct ContentView: View {
     @State private var isAlertShwon = false
     @State private var resultStr = ""
     
-    //MARK:- Body
+    //MARK: - Body
     var body: some View {
         
         ZStack {
@@ -32,7 +32,7 @@ struct ContentView: View {
                 Text("Choose to \(shouldWin ? "Win" : "Lose")")
                     .titleStyle(font: .title2)
 
-                ForEach(0..<moves.count) { index in
+                ForEach(0..<moves.count, id: \.self) { index in
                     Button(action: {
                         choiceTapped(index)
                     }, label: {
